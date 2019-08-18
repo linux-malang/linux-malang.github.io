@@ -7,10 +7,6 @@ script:
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site
 
-branches:
-  only:
-  - *
-
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
