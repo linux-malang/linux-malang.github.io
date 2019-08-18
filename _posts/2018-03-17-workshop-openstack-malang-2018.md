@@ -11,7 +11,7 @@ tags:	sysadmin workshop
 
 Explore Openstack horizon untuk mengoperasikan sistem cloud dengan controller terkini atau belajar melakukan set up infrastruktur virtual secara komprehensif ? Datang dan ikuti Workshop OpenStack! GRATIS dan Tempat terbatas!
 
-![](/assets/images/workshop-openstack-malang-2018.jpg)
+![Poster Workshop Openstack Malang](/assets/images/workshop-openstack-malang-2018.jpg)
 
 - Hotel MaxOne Malang
 - Sabtu, 24 Maret 2018

@@ -10,7 +10,7 @@ cover:  "/assets/instacode.png"
 
 Hola sam, man-teman semua, ada kulgram lagi kita. Kali ini judulnya "Implementasi Fail2ban di CentOS 7" dengan pemateri Hamim Blc salah satu anggota KLiM yang saat ini sedang berkarir di Jakarta. Meski posisinya nun jauh dari Malang, beliau berkenan berbagi ilmu dengan kita di sini melalui kulgram ini.
 
-![](/assets/images/kulgram04.jpg)
+![Poster Kulgram 04](/assets/images/kulgram04.jpg)
 
 Persyaratan untuk mengikuti kulgram ini :
 - punya Laptop
@@ -19,9 +19,9 @@ Persyaratan untuk mengikuti kulgram ini :
 - CentOS 7 telah terkoneksi ke Internet
 
 Catet tanggal & waktunya ya :
-Hari, tanggal : Minggu, 25 November 2018
-waktu : pukul 19:00 WIB s.d. selesai
-tempat : grup Telegram KLiM https://t.me/linuxmalang
+- Hari, tanggal : Minggu, 25 November 2018
+- waktu : pukul 19:00 WIB s.d. selesai
+- tempat : grup Telegram KLiM https://t.me/linuxmalang
 
 monggo dishare...
 

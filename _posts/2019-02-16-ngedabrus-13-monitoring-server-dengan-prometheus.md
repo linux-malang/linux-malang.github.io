@@ -9,7 +9,7 @@ tags:	container docker ngedabrus
 
 “Seseorang yang berhenti belajar adalah orang lanjut usia, meskipun umurnya masih remaja. Seseorang yang tidak pernah berhenti belajar akan selamanya menjadi pemuda” -  Henry Ford
 
-![](/assets/images/ngedabrus-13.jpg)
+![Poster Ngedabrus 13](/assets/images/ngedabrus-13.jpg)
 
 Hallo sahabat Linuxer Malang Raya, #KLiM ada kopdar lagi nih.. Kali ini kita akan belajar tentang "Monitoring Server Dengan Prometheus" yang akan dibawakan @sidarmawan seorang Mahasiswa STIMATA, Malang. 
 

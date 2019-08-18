@@ -11,7 +11,7 @@ cover:  "/assets/instacode.png"
 
 Tahukan teman-teman tentang teknologi Docker? halo siapa yang sudah pernah oprek docker? kalau belum pernah, tenang aja, kulgram kali ini kita akan belajar bersama-sama tentang Docker. Materi **"Dockerfile for Beginner"** akan dibawakan perempuan hebat Ananda Dwi Rahmawati di sini.
 
-![](/assets/images/kulgram06.jpg)
+![Poster Kulgram 06](/assets/images/kulgram06.jpg)
 
 Persyaratan untuk mengikuti kulgram ini :
 - punya Laptop

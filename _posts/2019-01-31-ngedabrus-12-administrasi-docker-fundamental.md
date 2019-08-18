@@ -9,7 +9,7 @@ tags:	container docker ngedabrus
 
 Hallo Linuxer Ngalam dan sekitarnya, #KLiM ada kopdar lagi nih... Seperti biasanya #ngedabrus KLiM akan membawakan materi yang menarik lo.. Kali ini kita akan belajar tentang "Administrasi Docker Fundamental" yang akan dibawakan @leonyonz seorang Mahasiswa STIMATA, Malang.
 
-![](/assets/images/ngedabrus-12.jpg)
+![Poster Ngedabrus 12](/assets/images/ngedabrus-12.jpg)
 
 apa syarat mengikuti kopdar ini? cukup bawa laptop, sudah terinstall Docker, pake GNU/Linux tentunya. :D
 

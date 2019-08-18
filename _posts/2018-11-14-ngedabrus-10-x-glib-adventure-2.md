@@ -10,7 +10,7 @@ cover:  "/assets/images/glib-advendure-2.jpg"
 
 Teman-teman pernah dengar kubernetes? kalo belum yuk gabung kopdar kolaborasi komunitas "GNU/Linux Bogor" (GLiBogor) dengan Komunitas GNU/Linux Malang (KLiM). Dalam kolaborasi ini kita akan membahas tentang Kubernetes. 
 
-![](/assets/images/glib-advendure-2.jpg)
+![Poster GLiB Adventure 2](/assets/images/glib-advendure-2.jpg)
 
 Kubernetes adalah sebuah cluster management open source yang di gunakan untuk mengelola docker. Aplikasi ini berasal dari aplikasi internal yang digunakan Google untuk mengelola cluster. Menarik, bukan? 
 

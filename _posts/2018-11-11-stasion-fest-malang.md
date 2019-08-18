@@ -12,7 +12,7 @@ Hai para pelaku industri kreatif juga teman -teman Startup Digital Kota Malang d
 
 STASION tidak hanya mengadakan conference yang mempertemukan para pelaku industri startup tetapi juga mengadakan acara Exhibition yang akan menampilkan produk-produk digital dari berbagai macam startup di Malang dan Sharing Session yang akan diisi oleh beberapa komunitas di Malang dengan tema yang sangat menarik dan pastinya kekinian dong. Yuk langsung aja jangan ketinggalan cek web kita di fest.stasion.org 
 
-![](/assets/images/stasion-fest-malang.jpg)
+![Poster Stasion Fest Malang](/assets/images/stasion-fest-malang.jpg)
 
 IG : https://www.instagram.com/stasionmalang/
 

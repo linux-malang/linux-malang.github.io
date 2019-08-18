@@ -8,7 +8,7 @@ tags:	event festival security
 cover:  "/assets/instacode.png"
 ---
 
-![](/assets/images/idsecconf2018.jpg)
+![Poster ID Secconf](/assets/images/idsecconf2018.jpg)
 
 Kami dari komite IDSECCONF 2018 Malang memberi kesempatan pada rekan-rekan penggiat keamanan komputer di seluruh Indonesia untuk dapat berpartisipasi dalam kegiatan IDSECCONF2018 lewat penyerahan paper, khususnya pada topik "Hacking the latest technology innovations", diantaranya meliputi:
 

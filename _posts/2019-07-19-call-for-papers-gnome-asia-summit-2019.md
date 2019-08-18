@@ -9,7 +9,7 @@ tags:	event festival gnome
 
 Call for Paper GNOME.Asia Summit 2019 **DIPERPANJANG!** Yai, untuk teman-teman yang belum sempat mengirimkan proposal topik di acara bergengsi ini, jangan ditunda-tunda lagi, yuk segera kirim.
 
-![](/assets/images/cfp-gnome-asia-summit.png)
+![Poster CFP GNAS](/assets/images/cfp-gnome-asia-summit.png)
 
 Untuk yang belum tahu, kegiatan ini merupakan salah satu konferensi tahunan GNOME untuk kawasan Asia. Acara ini berfokus pada desktop GNOME serta aplikasi dan alat pengembangan platform. Konferensi ini akan mempertemukan komunitas GNOME di Asia untuk menyediakan forum bagi pengguna, pengembang, pemimpin yayasan, pemerintah, dan pemilik bisnis untuk membahas teknologi saat ini dan perkembangan di masa depan.
 

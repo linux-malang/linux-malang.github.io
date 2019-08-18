@@ -10,7 +10,7 @@ cover:  "/assets/instacode.png"
 
 Hai teman-teman pernah nggak sih teman - teman mempunyai keinginan untuk membuat sebuah penyimpanan data pribadi atau perusahaan secara pribadi layak nya Google Drive atau Dropbox dengan privasi yang aman tentunya dan hanya Anda yang tau ? 
 
-![](/assets/images/kulgram05.jpg)
+![Poster Kulgram 05](/assets/images/kulgram05.jpg)
 
 Nah pada kulgram kali ini kita akan membahas bagaimana cara Implementasi Nextcloud sebagai Internal Cloud Storage di CentOS 7 dengan pemateri @hamimaja salah satu anggota KLiM yang saat ini sedang berkarir di Industri Cloud Computing di Jakarta. 
 

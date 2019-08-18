@@ -11,6 +11,6 @@ LibreOffice Conference 2018, seperti tertulis di laman resminya [libreoffice.id]
 
 Acara tersebut akan diselenggarakan pada 23-25 Maret 2018 di Politeknik Elektronik Negeri Surabaya (PENS). 
 
-KLiM (Komunitas GNU/Linux Malang) mendukung penuh terselenggaranya acara tersebut. Anda dapat menyimak kabar terbarunya [di sini](https://kabarlinux.web.id/?s=libreoffice). 
+KLiM (Komunitas GNU/Linux Malang) mendukung penuh terselenggaranya acara tersebut. Anda dapat menyimak kabar terbarunya [di sini](https://kabarlinux.id/?s=libreoffice). 
 
 Sampe jumpa di surabaya.....

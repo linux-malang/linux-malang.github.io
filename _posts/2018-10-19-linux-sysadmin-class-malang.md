@@ -10,7 +10,7 @@ cover:  "/assets/instacode.png"
 
 CentOS adalah salah satu distro linux yang sangat terkenal di dunia yang banyak digunakan oleh perusahaan-perusahaan nasional dan internasional. Pada training CentOS, peserta akan belajar mengenai instalasi, konfigurasi, manajemen serta troubleshooting pada system CentOS Linux server.
 
-![](/assets/images/linux-sysadmin-class-malang.jpg)
+![Linux SysAdmin Class Malang](/assets/images/linux-sysadmin-class-malang.jpg)
 
 - Peserta diharapkan setelah training mampu untuk melakukan instalasi dan konfigurasi service pada server dengan system operasi CentOS Linux Server.
 - Peserta dapat memahami langkah-langkah troubleshooting pada server dengan system operasi CentOS Linux Server.

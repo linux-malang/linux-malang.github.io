@@ -9,7 +9,7 @@ tags:	container docker python ngedabrus
 
 Hai hallo nawak-nawak, kopdar lagi yuuk... sudah kangen kan dengan #ngedabrus KLiM? kali ini kita akan belajar tentang Lingkungan ngoding Python dengan Docker Compose yang akan dibawakan @hapidznur seorang Full Stack Python Developer dari Biji Inovasi, Malang.
 
-![](/assets/images/ngedabrus-11.jpg)
+![Poster Ngedabrus 11](/assets/images/ngedabrus-11.jpg)
 
 apa syarat mengikuti kopdar ini? cukup bawa laptop, sudah terinstall Docker, pake GNU/Linux tentunya. :D
 

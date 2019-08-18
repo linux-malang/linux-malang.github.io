@@ -11,7 +11,7 @@ Mewakili KLiM (Komunitas GNU/Linux Malang) menemani Endless Ambasador bu Siska I
 
 "EndlessOS itu distro Linux yang diperuntukkan bagi orang yang belum pernah pake komputer. Ibu-ibu, anak-anak kecil bisa pake EndlessOS, apalagi anak SMK," ungkap Siska. "Apapun distro Linux-nya, kita usahakan penetrasi sedini mungkin penggunaan open source bagi anak-anak kita," lanjut penggerak komunitas Perempuan Sadar Teknologi (PASTI) ini.
 
-![](/assets/images/pic05.jpg)
+![Suasana Kelas](/assets/images/pic05.jpg)
 
 Senada dengan istrinya, Sendy menambahkan bahwa EndlessOS meningkatkan keterjangkauan informasi dengan membundle ensiklopedia yang dapat dibaca secara offline. "Jadi, ini ibaratnya wikipedia offline yang dapat kita baca tanpa koneksi internet," ungkap Software Engineer PrismApp ini sembari mendemonstrasikan penggunaan EndlessOS.
 

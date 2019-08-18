@@ -11,7 +11,7 @@ cover:  "/assets/images/penerjemahan-libreoffice.jpg"
 
 Budalkan kontribusi sam!
 
-![](/assets/images/penerjemahan-libreoffice.jpg)
+![Poster Penerjemahan LibreOffice](/assets/images/penerjemahan-libreoffice.jpg)
 
 tanggal : 5-6 Januari 2019
 
