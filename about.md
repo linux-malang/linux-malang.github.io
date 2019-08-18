@@ -4,7 +4,7 @@ title: Tentang KLiM
 permalink: /about/
 ---
 
-<img src="{{ site.baseurl }}/assets/logo.png" title="Profile Picture" class="profile">
+<img src="{{ site.baseurl }}/assets/logo.png" title="Logo KLiM" alt="Logo KLiM" class="profile">
 
 Komunitas GNU/Linux Malang (atau disingkat KLiM) adalah sekelompok anak muda yang memiliki minat, perhatian, kecintaan pada dunia perangkat lunak bebas dan terbuka (Free/Libre Open Source Software) di lingkungan Malang Raya dan sekitarnya. 
 
