@@ -1,39 +1,37 @@
 language: ruby
 rvm:
-  - 2.6.3
-
-script: 
-  - set -e
-  - bundle install
-  - bundle exec jekyll build
-  - bundle exec htmlproofer ./_site --disable-external
-
+- 2.6.3
+script:
+- set -e
+- bundle install
+- bundle exec jekyll build
+- bundle exec htmlproofer ./_site --disable-external
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-
+  - secure: ol5AQ2RT5ikyeAEtPcvy9hzwpHY+3gKkgrrgLExoHEIXS1Bn2uBzcfURNE/7M0MM+ecdDCYQmgqXR8Y24Up6nB3i9z5L2wXuSjj+36YXVRSFRwTC/TKTxjW6m32HqZO2zG6tCu1SziePPdnOBZ7ytdeVYFSTpXz4SuAVS+ZVNuAvIgVT90bj9tqHZVAuZDycBy0hyi81xblsusBo++mahxsM+Z5ZOuWIeM98cAbsj7LT7PaKayKIvoryyYT///3GQJNu8II2pUWUtd4PN4w0TwFBP71LyWIAMFFL+PgJkCsnuX+huq8emtU2cDeFgmu4rk55+yTRwrZAIdgj6uMiE70ZjZUhCw8HnbE+KRoWxFbVJ/HJ+24MsfbzPT47kOvOsmtfb34dJVF7B+EjvIBWNl95C7OkzAgCYern+vhdFWiotgJlB1CivA00g3mZHeQorwAzj+yQcJGXq+wB1oYTOvdgdC2BVnbOPEFyBqxnCiWUxGxpMBgFScyBnS/qInA69m2hxPLTzcD5GujQuKG1+BbQeK6sGVjm2PwSGILj1C1chUQhrs1wBWPVzAskLy9JCT3AXjH7cDekt7U3hcBcn4rD2I9186lypAfIOvzDmJS94UHAJ+BatwPq3kLQX+bbflr2uSSLcTJiprSG+P2RlahYMWbwjjIfD7USVPfQ6j4=
+  - secure: BJBGIigrAW4X2S6eQpSSzfcS01hKitC2Wsbk0CzvfIzBjO9//bwz6tHBRQzrdpxpzFj1p9eYkXDmQvUIPg4kGCfX1toNlQ3qQk4F7VvlXY7EhunkaYQyP8IVdX47iGvBr9zRlEv+sI10DsDhLEYVGZtKTYasVkw+ecGIDbX2Lex+GBQGk9FBvqiOZw2ma76NTgilxjrr1FPtf59INZGQaeun8cWlPQ1OVgWACxZzAdep/3UGVYFmM6Ky98aSHFK3QTUQTAvG9qTU4Fnu4S7SPyZP1daP3s8+l+iU6y0eLhrxzKTS9xNOPcI8SHXsEC8fAm2wKtBDKVSH7r7aRO53Q2dKR13kGEI/jPztVf/jkILPMejVXuED/8ni5gNvJ6dHzPApKRYsFogZ4DxnQbLd8WEMAMmJlWCmp65/osdglQnswqz/5SJoj7u/8Gy89wQEOErjguhpVP+N4a6fMLdb7m06S0KfZqbaflmUwkUgFjqgYas//evtSUXdr9YcOci28Xq1vCHd6VGnh/TPPM7OnwoQ7Fn9zYo1wKnH3xxvZJmELlWQ/Z2Lt2MeKfF0ry7FJ2PfCkA9e5Kgrf0O/Rhm6orR53rSpMC69N8SIAgerLfR+7/LRHMyX2cyHnW92fQ4k0uLKOFys4gJpELdUwNtFDMRFWPnmCu3IuJ+VQqOrmc=
+  - secure: FZBD3tPAxyrlqAUvaviK+PJwOFZo98sx+N6sSGIRImJwHc+jhgqJMyj6klI6RkNTHHsK62qaEx/x73qd/wXrlLlFidurDxytcjTPv+Si4dhjKbKMqokvbbz1Zn+mYnH4cAGJAoqSUXVklI8DNRRy99KukMvtRX8Ywq++BTJefjOhg2cF52m4tPKgIoGHYBNY2PhzXbbwLR1CzBwEv8fBv77becNDmXruwXAmNYnzqYIlL5cYueCBl6BT/FRTzRDVpGFo7Gq/3OwYgCNYYOPl/Ed5Nkf6QGYUvEh1L3IjqBJry1ISvs0Gsx82XYWe6SjbK4GQPG7eclCFlugcOdlnntf8/PXKDcQyYsU/9D7bVpUwqbLEADZhCZpzOu5c3q5beDbFUe8crK9hw+/v21H/LPCEI+IoOE4HBMAMzY1tgOMZ1eEFmNzo2ZjAg/dOJJst2d3hhiA2yQY2KiqJegdUci+cgSiM36WD541H6E6tp5gGEHOlCx5N0ARY4ljiW3H3ZuDYB+FMHLwVF/9OHpJiJhOQqs37OFRKNVwKbUYJuzSvc0ace3aBRpczxOANeOOIjqAdNzeJKQ8MnUYcWnENFpXwT7KcSkAQ0j2PE9/BgaIdT7hsFesg5ArCyI5aSGwGvphByM2BoCmcrK19PvRJZPU7Ks8LmUPMjCm9zH8u3sY=
 addons:
   apt:
     packages:
     - libcurl4-openssl-dev
     - openssh-client
-
 sudo: false
-
 cache: bundler
-
 before_deploy:
-  - eval $(ssh-agent -s)
-  - ssh-add <(echo "$kartolo_klim")
-  - mkdir -p ~/.ssh
-  - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
-
+- openssl aes-256-cbc -K $encrypted_0c35eebf403c_key -iv $encrypted_0c35eebf403c_iv
+  -in deploy_rsa.enc -out /tmp/deploy_rsa -d
+- eval $(ssh-agent -s)
+- chmod 600 /tmp/deploy_rsa
+- ssh-add /tmp/deploy_rsa
+- mkdir -p ~/.ssh
+- echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
 deploy:
   provider: script
   skip_cleanup: true
   script: rsync -r --quiet --delete-after _site/* $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_DIRECTORY
   on:
     branch: master
-
 notifications:
   email: false
