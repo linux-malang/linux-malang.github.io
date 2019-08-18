@@ -16,10 +16,24 @@ addons:
   apt:
     packages:
     - libcurl4-openssl-dev
+    - openssh-client
 
 sudo: false
 
 cache: bundler
+
+before_deploy:
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$kartolo_klim")
+  - mkdir -p ~/.ssh
+  - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: rsync -r --quiet --delete-after _site/* $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_DIRECTORY
+  on:
+    branch: master
 
 notifications:
   email: false

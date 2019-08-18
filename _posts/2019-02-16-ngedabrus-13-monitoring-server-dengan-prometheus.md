@@ -26,7 +26,6 @@ Kapan kopdarnya?
 
 Yang belum tau lokasinya ini link mapnya : https://goo.gl/maps/jYUEJw21b1k
 
-Ayo Ikut Meramaikan Sam...
-- #No_Wacana #Ayo_Belajar 
+Ayo Ikut Meramaikan Sam... #No_Wacana #Ayo_Belajar 
 
 Didukung oleh: CloudKilat | Werkudara_Cafe
