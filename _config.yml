@@ -17,11 +17,11 @@ exclude:
 
 # Site settings
 title: Komunitas GNU/Linux Malang
-subtitle: "Kami adalah komunitas pengguna, pecinta, pemerhati, dan pengembang GNU/Linux dan Open Source di lingkungan Malang Raya."
+subtitle: "KLiM adalah komunitas pengguna, pecinta, pemerhati, dan pengembang GNU/Linux dan Open Source di lingkungan Malang Raya."
 email: halo@klim.or.id
 name: Komunitas GNU/Linux Malang (KLiM)
 description: >
-  Kami adalah komunitas pengguna, pecinta, pemerhati, dan pengembang GNU/Linux dan Open Source di lingkungan Malang Raya.
+  KLiM adalah komunitas pengguna, pecinta, pemerhati, dan pengembang GNU/Linux dan Open Source di lingkungan Malang Raya.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
