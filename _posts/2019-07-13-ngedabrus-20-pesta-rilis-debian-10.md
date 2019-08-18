@@ -4,7 +4,7 @@ title:  "#NGEDABRUS20 Pesta Rilis Debian 10 dan Pengenalan Inkscape"
 date:   2019-07-13 08:43:59
 author: KLiM
 categories: blog
-tags:	networking IPv6 ngedabrus
+tags:	debian inkscape ngedabrus
 ---
 
 Hallo sahabat Linuxer Malang Raya di mana pun berada, bagaimana kabarnya semua? 

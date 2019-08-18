@@ -4,7 +4,7 @@ title:  "#NGEDABRUS19 Membangun Jaringan lokal dengan IPv6"
 date:   2019-07-01 08:43:59
 author: KLiM
 categories: blog
-tags:	networking IPv6 ngedabrus
+tags:	networking ipv6 ngedabrus
 ---
 
 Hallo sahabat Linuxer Malang Raya di mana pun berada, gimana liburan lebarannya kemarin? 

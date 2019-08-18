@@ -4,7 +4,7 @@ title:  "#NGEDABRUS18 Pesta Rilis openSUSE Leap 15.1 Road to OSAS 2019"
 date:   2019-05-21 08:43:59
 author: KLiM
 categories: blog
-tags:	pesta rilis openSUSE ngedabrus
+tags:	pesta rilis opensuse ngedabrus
 ---
 
 ![Poster Ngedabrus 18](/assets/images/ngedabrus-18.jpg)
