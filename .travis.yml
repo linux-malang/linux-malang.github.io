@@ -1,0 +1,28 @@
+language: ruby
+rvm:
+  - 2.6.3
+
+script: 
+  - set -e
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site
+
+branches:
+  only:
+  - *
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
+
+sudo: false
+
+cache: bundler
+
+notifications:
+  email: false
