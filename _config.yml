@@ -14,6 +14,7 @@ exclude:
   - /LICENSE.md
   - /README.md
   - /.ruby-version
+  - /.git/
 
 # Site settings
 title: Komunitas GNU/Linux Malang

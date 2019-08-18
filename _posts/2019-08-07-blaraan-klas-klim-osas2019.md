@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blara'an Bareng openSUSE Asia Summit 2019"
+title:  "Blara'an Bareng KLAS"
 date:   2019-08-07 08:43:59
 author: KLiM
 categories: blog
