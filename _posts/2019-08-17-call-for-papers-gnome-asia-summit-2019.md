@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tenggat Call for Papers GNOME.Asia Summit 2019, DIPERPANJANG!"
-date:   2019-07-19 08:43:59
+date:   2019-08-17 08:43:59
 author: KLiM
 categories: blog
 tags:	event festival gnome
