@@ -19,7 +19,7 @@ Makin penasaran kan... yuk join di **OpenStack MeetUp (Road to Indonesia Open In
 - Waktu : 13.00 - 17.00 WIB
 - Tempat : DiLo Malang - Telkom Kayutangan, Jl. Jenderal Basuki Rahmat No.7-9, Kauman, Klojen, Kota Malang, Jawa Timur 65119
 
-Pemateri : 
+Pemateri :
 - **Angga A Lanuma** - Software Engineer at KapanLagi Youniverse<br>
 Tema : Introduction to OpenStack
 
@@ -30,6 +30,6 @@ Pembawa acara : Samsul Maarif
 
 Daftarnya lewat sini ya.. [https://s.id/osidmeetup2](https://s.id/osidmeetup2)
 
-Acara ini diselenggarkan oleh OpenStack Indonesia & KLiM (Komunitas GNU/Linux Malang)
+Acara ini diselenggarkan oleh [OpenStack Indonesia](http://www.openstack.id) & **KLiM (Komunitas GNU/Linux Malang)**
 
-Serta disponsori oleh : **OpenStack Foundation**, **Btech**, **Cloud Kilat**
+Serta disponsori oleh : [**OpenStack Foundation**](https://www.openstack.org), [**Btech**](https://btech.id), [**Cloud Kilat**](https://www.cloudkilat.com)
