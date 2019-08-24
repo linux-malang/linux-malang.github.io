@@ -52,7 +52,7 @@ jekyll-archives:
 # disqus_shortname: bencentra
 
 # Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+ga_tracking_id: "UA-146446995-1"
 
 # Category descriptions (for archive pages)
 descriptions:
@@ -208,6 +208,6 @@ protocols:
 
     twitter_image: "/assets/logo.png"
 
-    os_repo: 
+    os_repo:
     os_rcs_type: "git"
-    os_src: 
+    os_src:
