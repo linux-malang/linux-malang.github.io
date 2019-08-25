@@ -22,4 +22,5 @@ Meskipun **KLiM** tidak memiliki struktur keorganisasian yang terstruktur, namun
 - [Ahmad Saufi Maulana](https://www.linkedin.com/in/azemoning/)
 - [Hidayat Hukung](https://t.me/hidayatalora)
 - [Fatkul Toriq](/)
+- [Muhamad Fadlurrahman](/)
 - **Kamu. Iya, kamu...**
