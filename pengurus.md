@@ -7,7 +7,7 @@ permalink: /pengurus/
 Meskipun **KLiM** tidak memiliki struktur keorganisasian yang terstruktur, namun dia memiliki pengurus yang aktif sebagai berikut :
 
 - [Ahmad 'Dionipe' Rifai](http://dionipe.id) (Pembina)
-- [Sabar Soewarsono](https://www.facebook.com/sabar.suwarsono)
+- [Sabar Soewarsono](https://www.linkedin.com/in/sabar-suwarsono-27a00387)
 - [Samsul Ma'arif](http://www.samsul.web.id)
 - [La Ode Muh. Fadlun Akbar a.k.a @alunux](https://wonderneko.wordpress.com/) (KLiM cab. Jepang)
 - [Mohammad Fadhil](/)
