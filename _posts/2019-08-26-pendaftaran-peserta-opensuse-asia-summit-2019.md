@@ -7,8 +7,6 @@ categories: blog
 tags:   event festival
 ---
 
-# Pendaftaran Peserta openSUSE.Asia Summit 2019 Dibuka
-
 ![Poster Pendaftaran Peserta openSUSE.Asia Summit 2019](/assets/images/poster-pendaftaran-opensuse-asia-summit-2019.png)
 
 Halo para linuxers!!! Ada pengumuman nih, pendaftaran peserta openSUSE.Asia Summit 2019 telah dibuka. Bagi yang mau mendaftar ayo daftarkan diri kalian dari link berikut ini [https://daftar-osas.opensuse.id/](https://daftar-osas.opensuse.id/)
