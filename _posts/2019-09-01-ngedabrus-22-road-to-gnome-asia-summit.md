@@ -13,6 +13,8 @@ Hallo sahabat Linuxer Malang Raya di mana pun berada, bagaimana kabarnya semua?
 
 CI/CD atau Continuous Integration (CI), Continuous Delivery (CD) dan Continuous Deployment (CD) merupakan praktek DevOps yang bisa dibilang wajib untuk pengembangan perangkat lunak pada masa kini. Kalau kamu seorang Software Developer baik frontend maupun backend, Android Developer, SysAdmin, atau siapa pun kamu yang ingin belajar tentang praktek DevOps dengan GitLab CI/CD, wajib dateng ya...
 
+![Poster ngedabrus #22 GitLab CI/CD for Beginner](/assets/images/ngedabrus-22.jpg)
+
 Apa aja syarat mengikuti kopdar ini?
 - Niat dan datang di lokasi
 
