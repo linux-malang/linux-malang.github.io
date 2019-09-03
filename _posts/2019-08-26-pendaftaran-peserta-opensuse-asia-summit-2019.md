@@ -2,7 +2,7 @@
 layout: post
 title:  "Pendaftaran Peserta openSUSE.Asia Summit 2019 Dibuka"
 date:   2019-08-26 08:43:59
-author: KLiM
+author: Aditya Rahman
 categories: blog
 tags:   event festival
 ---

@@ -18,7 +18,7 @@ Meskipun **KLiM** tidak memiliki struktur keorganisasian yang terstruktur, namun
 - [Leonardus Kristaris Sastra](https://www.facebook.com/leontujuhempat) (KLiM cab. Jakarta)
 - [Nur Hamim](https://nurhamim.net) (KLiM cab. Bogor)
 - [Nur Mukhammad Agus](https://t.me/madfxr) (KLiM cab. Jakarta)
-- [Aditya Rahman](https://medium.com/@kudaliar032)
+- [Aditya Rahman](https://www.linkedin.com/in/adityarahman032/)
 - [Ahmad Saufi Maulana](https://www.linkedin.com/in/azemoning/)
 - [Hidayat Hukung](https://t.me/hidayatalora)
 - [Fatkul Toriq](/)
