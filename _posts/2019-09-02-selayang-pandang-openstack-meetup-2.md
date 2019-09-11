@@ -25,6 +25,8 @@ Untuk peserta yang datang pada acara ini dari berbagai macam golongan dari asal.
 
 Setelah acara usai dan para peserta sudah kembali pulang ke tempat tinggal masing-masing. Beberapa anggota KLiM mengantarkan teman-teman dari KLAS menuju stasiun kereta api untuk kembali ke Surabaya. Sekaligus menjadi penutup dari kisah OpenStack Meetup #2 ini.
 
+Acara ini didukung sepenuhnya oleh [Btech](https://btech.id) dan [CloudKilat](https://www.cloudkilat.com).
+
 ### Materi:
 - [Introduction to OpenStack](https://docs.google.com/presentation/d/1oeIhny4zcf-P_2jHfMQ8HEE-Wc2Gq3OwmK5fqx6gdoE/edit?usp=drivesdk&ouid=114251247728410953587)
 - [Build Secure Container infrastructure with Kata Containers](https://github.com/yusufalafid/Kata-Container-OSF-Metup)
