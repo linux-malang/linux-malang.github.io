@@ -2,8 +2,7 @@ language: ruby
 rvm:
 - 2.6.3
 script:
-- echo 'Asia/Jakarta' | sudo tee /etc/timezone
-- sudo dpkg-reconfigure --frontend noninteractive tzdata
+- sudo timedatectl set-timezone Asia/Jakarta
 - date
 - set -e
 - bundle install

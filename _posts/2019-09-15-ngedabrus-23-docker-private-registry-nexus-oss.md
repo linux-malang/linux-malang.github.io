@@ -22,10 +22,10 @@ Apa aja syarat mengikuti kopdar ini?
 - Niat dan datang di lokasi
 - Membawa laptop dengan minimal RAM 4GB terpasang CentOS 7 (boleh dalam VM)
 
-Kapan sih kopdarnya?
-Hari: Jum’at 
-Tanggal: 20 September 2019 
-Pukul: 18:30 WIB s.d. selesai
+Kapan sih kopdarnya?  
+Hari: Jum’at  
+Tanggal: 20 September 2019  
+Pukul: 18:30 WIB s.d. selesai  
 Tempat:  [Kampung Kuliner](https://goo.gl/maps/oYYBCQ1NLJiVh3QV8), Jl. Gajayana No. 538, Dinoyo, Lowokwaru, Kota Malang
 
 Registrasi dulu disini sam:

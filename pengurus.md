@@ -23,5 +23,5 @@ Meskipun **KLiM** tidak memiliki struktur keorganisasian yang terstruktur, namun
 - [Hidayat Hukung](https://t.me/hidayatalora)
 - [Fatkul Toriq](/)
 - [Muhamad Fadlurrahman](/)
-- [Stanislaus J. Pinasthika](/)
+- [Stanislaus J. Pinasthika](https://www.linkedin.com/in/iamstanis/) (KLiM cab. Jember)
 - **Kamu. Iya, kamu...**
