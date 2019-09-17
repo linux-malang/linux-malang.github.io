@@ -2,6 +2,8 @@ language: ruby
 rvm:
 - 2.6.3
 script:
+- sudo timedatectl set-timezone Asia/Jakarta
+- date
 - set -e
 - bundle install
 - bundle exec jekyll build

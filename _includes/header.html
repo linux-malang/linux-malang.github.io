@@ -14,7 +14,9 @@
       <ul id="js-navigation-menu" class="navigation-menu show">
         {% for page in site.pages %}
           {% if page.title and page.main_nav != false %}
+            {% unless page.exclude %}
           <li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            {% endunless %}
           {% endif %}
         {% endfor %}
       </ul>
