@@ -4,7 +4,7 @@ title: "#NGEDABRUS24 Pengenalan Database dan CRUD dengan PHP"
 date: 2019-10-08 00:00:00
 author: Aditya Rahman
 categories: blog
-tags: ngedabrus php CRUD hacktoberfest
+tags: ngedabrus php hacktoberfest
 ---
 
 ![#NGEDABRUS24](/assets/images/ngedabrus-24.jpg)
