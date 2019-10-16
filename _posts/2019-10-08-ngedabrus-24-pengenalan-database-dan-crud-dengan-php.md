@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "#NGEDABRUS24 Pengenalan Database dan CRUD dengan PHP"
+title: "#NGEDABRUS24 x Hacktoberfest: Pengenalan Database dan CRUD dengan PHP"
 date: 2019-10-08 00:00:00
 author: Aditya Rahman
 categories: blog
