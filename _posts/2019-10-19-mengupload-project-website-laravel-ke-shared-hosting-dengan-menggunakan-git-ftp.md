@@ -1,5 +1,5 @@
 ---
-title: "Mengupload Project Website Laravel Ke Shared Hosting Dengan Menggunakan Git-FTP"
+title: "Mengupload Project Website Laravel ke Shared Hosting dengan Menggunakan Git-FTP"
 cover: "/assets/images/upload-laravel-ke-shared-hosting-dengan-git-ftp.png"
 date: 2019-10-19 23:39:08
 author: Nur Mukhammad Agus
@@ -24,7 +24,7 @@ Setelah semua kebutuhan diatas sudah siap, maka proses selanjutkan kita masuk ke
 
 Sebelumnya kita juga perlu membuat akun FTP pada Shared Hosting yang kita miliki, nantinya data credential akun FTP yang telah kita buat dibutuhkan untuk akses ke FTP Server pada Shared Hosting yang kita miliki untuk keperluan proses transfer data dan berikut langkah-langkahnya:
 
-##### Menginstall Git & Git-FTP Pada Komputer Lokal/Server
+**Menginstall Git & Git-FTP Pada Komputer Lokal/Server**
 
 ```
 yum update -y && yum install -y git (CentOS) atau apt-get update -y && apt-get install -y git (Ubuntu/Debian)
@@ -33,12 +33,12 @@ git clone https://github.com/git-ftp/git-ftp.git
 cd /git-ftp/
 cp git-ftp /usr/bin/git-ftp
 ```
-##### Mengupload Project Website Laravel Ke Shared Hosting
+**Mengupload Project Website Laravel ke Shared Hosting**
 ```
 cd /path/laravel/
 git init
 git add .
-git commit -m "Mengupload Project Website Laravel Ke Shared Hosting"
+git commit -m "Mengupload Project Website Laravel ke Shared Hosting"
 git config git-ftp.url "ftp://domain.tld:21"
 git config git-ftp.password "ftppassword"
 git config git-ftp.user "ftpuser"
@@ -46,27 +46,27 @@ git config git-ftp.syncroot /path/laravel/
 git config git-ftp.insecure 0
 git-ftp init atau git-ftp init --syncroot /path/laravel/
 ```
-##### Mengupload File Baru Ke Dalam Project Website Laravel
+**Mengupload File Baru ke dalam Project Website Laravel**
 ```
 cd /path/laravel/
 touch file.txt
 echo "File Baru Project Website Laravel" > file.txt
 git add file.txt
-git commit file.txt -m "Mengupload File Baru Ke Dalam Project Website Laravel"
+git commit file.txt -m "Mengupload File Baru ke dalam Project Website Laravel"
 git-ftp push atau git-ftp push --syncroot /path/laravel/
 ```
-##### Menghapus File Didalam Project Website Laravel
+**Menghapus File didalam Project Website Laravel**
 ```
 cd /path/laravel/
 git rm file.txt
-git commit -m "Menghapus File Didalam Project Website Laravel"
+git commit -m "Menghapus File didalam Project Website Laravel"
 git-ftp push atau git-ftp push --syncroot /path/laravel/
 ```
-##### Mendownload Project Website Laravel Pada Shared Hosting Ke Lokal/Server
+**Mendownload Project Website Laravel Pada Shared Hosting ke Lokal/Server**
 ```
 cd /path/laravel/
 git init
-git commit -m "Mendownload Project Website Laravel Pada Shared Hosting Ke Lokal"
+git commit -m "Mendownload Project Website Laravel Pada Shared Hosting ke Lokal/Server"
 git-ftp pull -u ftpuser -p ftppassword ftp://domain.tld:21 atau git-ftp download -u ftpuser -p ftppassword ftp://domain.tld:21
 ```
 
