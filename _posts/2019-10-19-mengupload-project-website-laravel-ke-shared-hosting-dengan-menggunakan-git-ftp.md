@@ -1,7 +1,7 @@
 ---
 title: "Mengupload Project Website Laravel ke Shared Hosting dengan Menggunakan Git-FTP"
 cover: "/assets/images/upload-laravel-ke-shared-hosting-dengan-git-ftp.png"
-date: 2019-10-19 23:39:08
+date: 2019-10-19 23:39:09
 author: Nur Mukhammad Agus
 layout: post
 categories: blog
