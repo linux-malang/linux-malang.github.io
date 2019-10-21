@@ -15,7 +15,7 @@ Meskipun **KLiM** tidak memiliki struktur keorganisasian yang terstruktur, namun
 - [Rico Cahyo Widodo Putra](https://t.me/ricocwp)
 - [Hesti Wiyarti](/)
 - [Sidarmawan](https://www.facebook.com/sidar.mawan8) (KLiM cab. Bogor)
-- [Leonardus Kristaris Sastra](https://www.facebook.com/leontujuhempat) (KLiM cab. Jakarta)
+- [Leonardus Kristaris Sastra](https://www.linkedin.com/in/yonzleon) (KLiM cab. Jakarta)
 - [Nur Hamim](https://nurhamim.net) (KLiM cab. Bogor)
 - [Nur Mukhammad Agus](https://t.me/madfxr) (KLiM cab. Jakarta)
 - [Aditya Rahman](https://www.linkedin.com/in/adityarahman032/)
