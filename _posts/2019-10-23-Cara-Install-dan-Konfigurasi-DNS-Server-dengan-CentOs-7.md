@@ -71,8 +71,7 @@ zone    "imonk.my.id"  {
 
 6. Simpan konfigurasi dan coba lakukan uji coba terhadap konfigurasi DNS yang telah dilakukan. 
 
-⋅⋅⋅ Anda dapat melakukan uji coba dari hasil konfigurasi DNS Anda menggunakan `nslookup` atau `dig`. Misalnya disini saya 
-⋅⋅⋅ menggunakan perintah `dig`, Anda dapat mengikuti langkah-langkah berikut ini : 
+Anda dapat melakukan uji coba dari hasil konfigurasi DNS Anda menggunakan `nslookup` atau `dig`. Misalnya disini saya menggunakan perintah `dig`, Anda dapat mengikuti langkah-langkah berikut ini : 
 
 
 ```
@@ -90,15 +89,15 @@ Name Server:NS2.IMONK.MY.ID
 103.41.205.70
 ```
 
-⋅⋅⋅Jika hasil pengetesan konfigurasi DNS server sudah sesuai dengan yang dikonfigurasi sebelumnya, maka akan menampilkan IP ⋅⋅⋅Address yang digunakan pada domain tersebut. Dari hasil pengetesan diatas dapat dilihat bahwa domain sudah resolv ke IP Address ⋅⋅⋅yang digunakan. Sebagai informasi tambahan apabila Anda melakukan konfigurasi DNS menggunakan VPS maka Anda perlu menunggu ⋅⋅⋅waktu propagasi dan waktu propagasi paling lambat 2x24 jam tergantung dari resolver ISP yang Anda gunakan, namun jika Anda ⋅⋅⋅menggunakan VM local Anda hanya menunggu beberapa saat domain tersebut akan resolv atau biasanya dapat resolv secara langsung ⋅⋅⋅tergantung dari segi konfigurasi resolver juga (resolv.conf). 
+Jika hasil pengetesan konfigurasi DNS server sudah sesuai dengan yang dikonfigurasi sebelumnya, maka akan menampilkan IP Address yang digunakan pada domain tersebut. Dari hasil pengetesan diatas dapat dilihat bahwa domain sudah resolv ke IP Address yang digunakan. Sebagai informasi tambahan apabila Anda melakukan konfigurasi DNS menggunakan VPS maka Anda perlu menunggu waktu propagasi dan waktu propagasi paling lambat 2x24 jam tergantung dari resolver ISP yang Anda gunakan, namun jika Anda menggunakan VM local Anda hanya menunggu beberapa saat domain tersebut akan resolv atau biasanya dapat resolv secara langsung tergantung dari segi konfigurasi resolver juga (resolv.conf). 
 
-⋅⋅⋅Untuk memastikan domain Anda sudah bisa diakses, instal web server (misalnya : apache) pada CentOs 7-server Anda dengan ⋅⋅⋅perintah : 
+Untuk memastikan domain Anda sudah bisa diakses, instal web server (misalnya : apache) pada CentOs 7-server Anda dengan perintah : 
 
 ```
 yum install httpd
 ```
 
-⋅⋅⋅Coba akses root domain Anda pada web browser, apabila berhasil maka akan tampil seperti pada gambar 3 berikut ini : 
+Coba akses root domain Anda pada web browser, apabila berhasil maka akan tampil seperti pada gambar 3 berikut ini : 
 
 ![Screenshot Git-FTP](/assets/images/Hasil-web-server.png)
 
