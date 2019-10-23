@@ -34,7 +34,7 @@ yum update -y
 yum install bind bind-utils -y
 ```
 
-**2. Konfigurasi DNS Server**
+**B. Konfigurasi DNS Server**
 
 1. Konfigurasi pertama DNS Server yaitu pada file named, backup terlebih dahulu untuk menghindari kegagalan service yang berjalan  pada DNS Server sehingga kita bisa mengembalikan konfigurasi secara default. Untuk melakukan konfigurasi DNS Server Anda dapat menggunakan teks editor favorit Anda, contohnya disini saya menggunakan `vim`. 
 
@@ -71,7 +71,8 @@ zone    "imonk.my.id"  {
 
 6. Simpan konfigurasi dan coba lakukan uji coba terhadap konfigurasi DNS yang telah dilakukan. 
 
-⋅⋅⋅Anda dapat melakukan uji coba dari hasil konfigurasi DNS Anda menggunakan `nslookup` atau `dig`. Misalnya disini saya ⋅⋅⋅menggunakan perintah `dig`, Anda dapat mengikuti langkah-langkah berikut ini : 
+⋅⋅⋅ Anda dapat melakukan uji coba dari hasil konfigurasi DNS Anda menggunakan `nslookup` atau `dig`. Misalnya disini saya 
+⋅⋅⋅ menggunakan perintah `dig`, Anda dapat mengikuti langkah-langkah berikut ini : 
 
 
 ```
