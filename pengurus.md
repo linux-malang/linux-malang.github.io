@@ -24,4 +24,5 @@ Meskipun **KLiM** tidak memiliki struktur keorganisasian yang terstruktur, namun
 - [Fatkul Toriq](/)
 - [Muhamad Fadlurrahman](/)
 - [Stanislaus J. Pinasthika](https://www.linkedin.com/in/iamstanis/) (KLiM cab. Jember)
+- [Imron Rosyadi](https://www.linkedin.com/in/imron-rosyadi-538143120/) (KLiM cab. Jakarta)
 - **Kamu. Iya, kamu...**
