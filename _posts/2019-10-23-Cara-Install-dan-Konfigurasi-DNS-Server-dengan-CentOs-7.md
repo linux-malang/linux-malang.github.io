@@ -20,32 +20,32 @@ Tujuan dari DNS yaitu memudahkan identifikasi informasi website menggunakan nama
 - **Komputer Lokal/Server**
 - **Domain Jika Diperlukan**
 
-**1. Instalasi DNS Server**
+**A. Instalasi DNS Server**
 
-Setelah semua kebutuhan sudah terpenuhi install terlebih dahulu paket DNS pada CentOs 7-server Anda, paket DNS yang digunakan pada CentOs adalah bind. Untuk melakukan instalasi paket tersebut, pastikan Anda sudah melakukan update paket terlebih dahulu dengan perintah : 
+1. Setelah semua kebutuhan sudah terpenuhi install terlebih dahulu paket DNS pada CentOs 7-server Anda, paket DNS yang digunakan pada CentOs adalah bind. Untuk melakukan instalasi paket tersebut, pastikan Anda sudah melakukan update paket terlebih dahulu dengan perintah : 
 
 ```
 yum update -y 
 ```
 
-Tunggu beberapa saat dan pastikan update paket telah selesai 100%, kecepatan proses update tergantung dari koneksi internet yang Anda gunakan. Selanjutnya install paket bind pada CentOs 7-server dengan perintah : 
+2. Tunggu beberapa saat dan pastikan update paket telah selesai 100%, kecepatan proses update tergantung dari koneksi internet yang Anda gunakan. Selanjutnya install paket bind pada CentOs 7-server dengan perintah : 
 
-```
+``` 
 yum install bind bind-utils -y
 ```
 
-**1. Konfigurasi DNS Server**
+**2. Konfigurasi DNS Server**
 
-Konfigurasi pertama DNS Server yaitu pada file named, backup terlebih dahulu untuk menghindari kegagalan service yang berjalan pada DNS Server sehingga kita bisa mengembalikan konfigurasi secara default. Untuk melakukan konfigurasi DNS Server Anda dapat menggunakan teks editor favorit Anda, contohnya disini saya menggunakan `vim`. 
+1. Konfigurasi pertama DNS Server yaitu pada file named, backup terlebih dahulu untuk menghindari kegagalan service yang berjalan  pada DNS Server sehingga kita bisa mengembalikan konfigurasi secara default. Untuk melakukan konfigurasi DNS Server Anda dapat menggunakan teks editor favorit Anda, contohnya disini saya menggunakan `vim`. 
 
 ```
 vim /etc/named.conf
 ```
-Sesuaikan dengan konfigurasi IP Address yang Anda gunakan saat ini, untuk detail penggunaannya dapat melalui gambar 1 dibawah ini : 
+2. Sesuaikan dengan konfigurasi IP Address yang Anda gunakan saat ini, untuk detail penggunaannya dapat melalui gambar 1 dibawah ini : 
 
 ![Screenshot Git-FTP](/assets/images/Konfigurasi-IP-Address-named.png)
 
-Selanjutnya Anda perlu mendeskripsikan nama domain yang akan digunakan pada website Anda, sehingga Anda perlu menambahkan baris konfigurasi seperti berikut : 
+3. Selanjutnya Anda perlu mendeskripsikan nama domain yang akan digunakan pada website Anda, sehingga Anda perlu menambahkan baris konfigurasi seperti berikut : 
 
 ```
 zone    "imonk.my.id"  {
@@ -55,22 +55,23 @@ zone    "imonk.my.id"  {
 
 ```
 
-Keterangan : 
-`imonk.my.id` merupakan root domain yang akan digunakan untuk manajemen DNS, isikan dengan domain yang ingin Anda gunakan. Pada baris file tersebut merupakan peletakan nama file yang akan disimpan, sehingga Anda harus membuat file yang sesuai dengan deklarasi yang Anda buat pada nama file tersebut. 
+> Keterangan : 
+> `imonk.my.id` merupakan root domain yang akan digunakan untuk manajemen DNS, isikan dengan domain yang ingin Anda gunakan. Pada > baris file tersebut merupakan peletakan nama file yang akan disimpan, sehingga Anda harus membuat file yang sesuai dengan 
+> deklarasi yang Anda buat pada nama file tersebut. 
 
-Simpan konfigurasi tersebut. 
+4. Simpan konfigurasi tersebut. 
 
-Buatlah nama file `imonk.my.id.zone` untuk forward zone sesuai dengan nama file yang dideklrasikan sebelumnya yang terletak pada direktori `/etc/named/`. Adapun beris konfigurasinya dapat menggunakan dengan salah satu contoh pada gambar 2 berikut ini : 
+5. Buatlah nama file `imonk.my.id.zone` untuk forward zone sesuai dengan nama file yang dideklrasikan sebelumnya yang terletak pada direktori `/etc/named/`. Adapun beris konfigurasinya dapat menggunakan dengan salah satu contoh pada gambar 2 berikut ini : 
 
 ![Screenshot Git-FTP](/assets/images/Konfigurasi-Forward-Zone.png)
 
 
-Keterangan : 
-Sesuaikan dengan nama domain dan IP Address yang Anda gunakan. 
+> Keterangan : 
+> Sesuaikan dengan nama domain dan IP Address yang Anda gunakan. 
 
-Simpan konfigurasi dan coba lakukan uji coba terhadap konfigurasi DNS yang telah dilakukan. 
+6. Simpan konfigurasi dan coba lakukan uji coba terhadap konfigurasi DNS yang telah dilakukan. 
 
-Anda dapat melakukan uji coba dari hasil konfigurasi DNS Anda menggunakan `nslookup` atau `dig`. Misalnya disini saya menggunakan perintah `dig`, Anda dapat mengikuti langkah-langkah berikut ini : 
+⋅⋅⋅Anda dapat melakukan uji coba dari hasil konfigurasi DNS Anda menggunakan `nslookup` atau `dig`. Misalnya disini saya ⋅⋅⋅menggunakan perintah `dig`, Anda dapat mengikuti langkah-langkah berikut ini : 
 
 
 ```
@@ -88,15 +89,15 @@ Name Server:NS2.IMONK.MY.ID
 103.41.205.70
 ```
 
-Jika hasil pengetesan konfigurasi DNS server sudah sesuai dengan yang dikonfigurasi sebelumnya, maka akan menampilkan IP Address yang digunakan pada domain tersebut. Dari hasil pengetesan diatas dapat dilihat bahwa domain sudah resolv ke IP Address yang digunakan. Sebagai informasi tambahan apabila Anda melakukan konfigurasi DNS menggunakan VPS maka Anda perlu menunggu waktu propagasi dan waktu propagasi paling lambat 2x24 jam tergantung dari resolver ISP yang Anda gunakan, namun jika Anda menggunakan VM local Anda hanya menunggu beberapa saat domain tersebut akan resolv atau biasanya dapat resolv secara langsung tergantung dari segi konfigurasi resolver juga (resolv.conf). 
+⋅⋅⋅Jika hasil pengetesan konfigurasi DNS server sudah sesuai dengan yang dikonfigurasi sebelumnya, maka akan menampilkan IP ⋅⋅⋅Address yang digunakan pada domain tersebut. Dari hasil pengetesan diatas dapat dilihat bahwa domain sudah resolv ke IP Address ⋅⋅⋅yang digunakan. Sebagai informasi tambahan apabila Anda melakukan konfigurasi DNS menggunakan VPS maka Anda perlu menunggu ⋅⋅⋅waktu propagasi dan waktu propagasi paling lambat 2x24 jam tergantung dari resolver ISP yang Anda gunakan, namun jika Anda ⋅⋅⋅menggunakan VM local Anda hanya menunggu beberapa saat domain tersebut akan resolv atau biasanya dapat resolv secara langsung ⋅⋅⋅tergantung dari segi konfigurasi resolver juga (resolv.conf). 
 
-Untuk memastikan domain Anda sudah bisa diakses, instal web server (misalnya : apache) pada CentOs 7-server Anda dengan perintah : 
+⋅⋅⋅Untuk memastikan domain Anda sudah bisa diakses, instal web server (misalnya : apache) pada CentOs 7-server Anda dengan ⋅⋅⋅perintah : 
 
 ```
 yum install httpd
 ```
 
-Coba akses root domain Anda pada web browser, apabila berhasil maka akan tampil seperti pada gambar 3 berikut ini : 
+⋅⋅⋅Coba akses root domain Anda pada web browser, apabila berhasil maka akan tampil seperti pada gambar 3 berikut ini : 
 
 ![Screenshot Git-FTP](/assets/images/Hasil-web-server.png)
 
