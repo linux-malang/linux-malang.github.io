@@ -43,27 +43,27 @@ vim /etc/named.conf
 ```
 2. Sesuaikan dengan konfigurasi IP Address yang Anda gunakan saat ini, untuk detail penggunaannya dapat melalui gambar 1 dibawah ini : 
 
-![Screenshot Git-FTP](/assets/images/Konfigurasi-IP-Address-named.png)
+![Screenshot DNS-server](/assets/images/Konfigurasi-IP-Address-named.png)
 
 3. Selanjutnya Anda perlu mendeskripsikan nama domain yang akan digunakan pada website Anda, sehingga Anda perlu menambahkan baris konfigurasi seperti berikut : 
 
 ```
-zone    "imonk.my.id"  {
+zone    "domain.tld"  {
         type master;
-        file    "/etc/named/imonk.my.id.zone";
+        file    "/etc/named/domain.tld.zone";
  };
 
 ```
 
 > Keterangan : 
-> `imonk.my.id` merupakan root domain yang akan digunakan untuk manajemen DNS, isikan dengan domain yang ingin Anda gunakan. Pada > baris file tersebut merupakan peletakan nama file yang akan disimpan, sehingga Anda harus membuat file yang sesuai dengan 
+> `domain.tld` merupakan root domain yang akan digunakan untuk manajemen DNS, isikan dengan domain yang ingin Anda gunakan. Pada > baris file tersebut merupakan peletakan nama file yang akan disimpan, sehingga Anda harus membuat file yang sesuai dengan 
 > deklarasi yang Anda buat pada nama file tersebut. 
 
 4. Simpan konfigurasi tersebut. 
 
-5. Buatlah nama file `imonk.my.id.zone` untuk forward zone sesuai dengan nama file yang dideklrasikan sebelumnya yang terletak pada direktori `/etc/named/`. Adapun beris konfigurasinya dapat menggunakan dengan salah satu contoh pada gambar 2 berikut ini : 
+5. Buatlah nama file `domain.tld.zone` untuk forward zone sesuai dengan nama file yang dideklrasikan sebelumnya yang terletak pada direktori `/etc/named/`. Adapun beris konfigurasinya dapat menggunakan dengan salah satu contoh pada gambar 2 berikut ini : 
 
-![Screenshot Git-FTP](/assets/images/Konfigurasi-Forward-Zone.png)
+![Screenshot DNS-server](/assets/images/Konfigurasi-Forward-Zone.png)
 
 
 > Keterangan : 
@@ -75,18 +75,18 @@ Anda dapat melakukan uji coba dari hasil konfigurasi DNS Anda menggunakan `nsloo
 
 
 ```
-# whois imonk.my.id | grep Server
-Name Server:NS1.IMONK.MY.ID
-Name Server:NS2.IMONK.MY.ID
+# whois domain.tld | grep Server
+Name Server:NS1.DOMAIN.TLD
+Name Server:NS2.DOMAIN.TLD
 
-# dig imonk.my.id +short 
-103.41.205.70
+# dig domain.tld +short 
+IP-Addr-DNS-Server
 
-# dig @ns1.imonk.my.id imonk.my.id +short
-103.41.205.70
+# dig @ns1.domain.tld domain.tld +short
+IP-Addr-DNS-Server
 
-# dig @ns2.imonk.my.id imonk.my.id +short
-103.41.205.70
+# dig @ns2.domain.tld domain.tld +short
+IP-Addr-DNS-Server
 ```
 
 Jika hasil pengetesan konfigurasi DNS server sudah sesuai dengan yang dikonfigurasi sebelumnya, maka akan menampilkan IP Address yang digunakan pada domain tersebut. Dari hasil pengetesan diatas dapat dilihat bahwa domain sudah resolv ke IP Address yang digunakan. Sebagai informasi tambahan apabila Anda melakukan konfigurasi DNS menggunakan VPS maka Anda perlu menunggu waktu propagasi dan waktu propagasi paling lambat 2x24 jam tergantung dari resolver ISP yang Anda gunakan, namun jika Anda menggunakan VM local Anda hanya menunggu beberapa saat domain tersebut akan resolv atau biasanya dapat resolv secara langsung tergantung dari segi konfigurasi resolver juga (resolv.conf). 
@@ -99,7 +99,7 @@ yum install httpd
 
 Coba akses root domain Anda pada web browser, apabila berhasil maka akan tampil seperti pada gambar 3 berikut ini : 
 
-![Screenshot Git-FTP](/assets/images/Hasil-web-server.png)
+![Screenshot DNS-server](/assets/images/Hasil-web-server.png)
 
 Demikian informasi yang dapat saya bagikan semoga ilmu dan pengetahun tentang DNS Server ini dapat bermanfaat dan barokah buat kita semua. Aamiin 
 
