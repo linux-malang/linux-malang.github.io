@@ -8,13 +8,13 @@ categories: blog
 tags: dns-server domain centos
 ---
 
-Pada kali ini kami saya akan membagikan ilmu dan pengetahuan mendasar seperti DNS Server. Terkait dengan DNS Server merupakan kebutuhan fundamental yang wajib dimiliki sebelum membuat suatu website salah satu contohnya. Sebelum kita mengenal lebih jauh dengan DNS kita harus tahu terlebih dahulu definisi dan tujuan dari DNS itu sendiri.
+Pada kali ini saya akan membagikan ilmu dan pengetahuan mendasar seperti DNS Server. Terkait dengan DNS Server merupakan kebutuhan fundamental yang wajib dimiliki misalnya sebelum membuat suatu website. Sebelum kita mengenal lebih jauh dengan DNS kita harus tahu terlebih dahulu definisi dan tujuan dari DNS itu sendiri.
 DNS merupakan kependekan dari Domain Name System yang merupakan sistem penamaan hirarkis dan desentralisasi untuk komputer, layanan, atau sumber daya lain yang terhubung ke internet atau jaringan pribadi. Ini mengaitkan berbagai informasi dengan nama domain yang ditetapkan, artinya menerjemahkan nama domain yang lebih mudah dihafal ke alamat IP Address yang diperlukan untuk mencari dan mengidentifikasi layanan komputer dan perangkat dengan protokol jaringan.
-Tujuan dari DNS yaitu memudahkan identifikasi informasi website menggunakan nama domain, misalnya website A memiliki IP Address 1.1.1.1, website B menggunakan IP Address 2.2.2.2 dan website C menggunakan IP Address 3.3.3.3. Kita akan kesulitan untuk mengakses ketiga website tersebut dan akan lebih kesusahan lagi jika mengakses website dengan jumlah yang banyak. Dengan demikian adanya DNS dapat memudahkan user dalam mengakses suatu website menggunakan nama domain. Lebih lengkapnya Anda dapat melihat tautan referensi berikut ini : https://en.wikipedia.org/wiki/Domain_Name_System
+Tujuan dari DNS yaitu memudahkan identifikasi informasi website menggunakan nama domain, misalnya website A memiliki IP Address 1.1.1.1, website B menggunakan IP Address 2.2.2.2 dan website C menggunakan IP Address 3.3.3.3. Kita akan kesulitan untuk mengakses ketiga website tersebut dan akan lebih kesusahan lagi jika mengakses website dengan jumlah yang banyak menggunakan IP Address. Dengan demikian adanya DNS dapat memudahkan user dalam mengakses suatu website menggunakan nama domain. Lebih lengkapnya Anda dapat melihat tautan referensi berikut ini : https://en.wikipedia.org/wiki/Domain_Name_System
 
  Nah, yang melakukan konfigurasi dasar dari DNS itu sendiri adalah DNS Server. DNS Server adalah server yang melayani permintaan client untuk mengetahui alamat yang digunakan oleh sebuah website. Jadi misalnya Anda ingin mengakses website A, maka DNS Server yang akan mencari alamat dari website A agar client dapat mengakses ke website A. Untuk dapat mengakses sebuah website dengan nama domain perlu pengelolahan pada DNS itu sendiri (DNS Management), DNS Management ini memiliki record DNS yang dapat digunakan untuk mengarahkan domain terhadap suatu website secara lebih spesifik. 
 
- Selanjutnya kita akan mencoba melakukan instalasi dan konfigurasi DNS Server pada sistem operasi CentOs 7, kali ini saya menggunakan virtual machine (VM) dari Virtual Private Server (VPS) supaya website saya juga langsung bisa diakses secara public. Adapun persiapan yang harus dilakukan sebelum melakukan instalasi DNS Server sebagai berikut : 
+ Selanjutnya kita akan mencoba melakukan instalasi dan konfigurasi DNS Server pada sistem operasi CentOs 7, kali ini saya menggunakan Virtual Private Server (VPS) supaya website saya juga langsung bisa diakses secara public. Adapun persiapan yang harus dilakukan sebelum melakukan instalasi DNS Server sebagai berikut : 
 
 - **Sistem Operasi CentOS 7 Server**
 - **Komputer Lokal/Server**
@@ -36,12 +36,13 @@ yum install bind bind-utils -y
 
 **1. Konfigurasi DNS Server**
 
-Konfigurasi pertama DNS Server yaitu pada file named, backup terlebih dahulu untuk menghindari kegagalan service yang berjalan pada DNS Server sehingga kita bisa mengembalikan konfigurasi secara default. Untuk melakukan konfigurasi DNS Server Anda dapat menggunakan teks editor favorit Anda. 
+Konfigurasi pertama DNS Server yaitu pada file named, backup terlebih dahulu untuk menghindari kegagalan service yang berjalan pada DNS Server sehingga kita bisa mengembalikan konfigurasi secara default. Untuk melakukan konfigurasi DNS Server Anda dapat menggunakan teks editor favorit Anda, contohnya disini saya menggunakan `vim`. 
 
 ```
 vim /etc/named.conf
 ```
 Sesuaikan dengan konfigurasi IP Address yang Anda gunakan saat ini, untuk detail penggunaannya dapat melalui gambar 1 dibawah ini : 
+
 ![Screenshot Git-FTP](/assets/images/Konfigurasi-IP-Address-named.png)
 
 Selanjutnya Anda perlu mendeskripsikan nama domain yang akan digunakan pada website Anda, sehingga Anda perlu menambahkan baris konfigurasi seperti berikut : 
@@ -63,12 +64,14 @@ Buatlah nama file `imonk.my.id.zone` untuk forward zone sesuai dengan nama file 
 
 ![Screenshot Git-FTP](/assets/images/Konfigurasi-Forward-Zone.png)
 
+
 Keterangan : 
 Sesuaikan dengan nama domain dan IP Address yang Anda gunakan. 
 
-Simpan konfigurasi dan coba lakukan pengetesan terhadap konfigurasi DNS yang telah dilakukan sebelumnya. 
+Simpan konfigurasi dan coba lakukan uji coba terhadap konfigurasi DNS yang telah dilakukan. 
 
-Anda dapat melakukan pengetesan hasil konfigurasi DNS Anda menggunakan `nslookup` atau `dig`. Misalnya saya disini menggunakan perintah `dig`, Anda dapat mengikuti langkah-langkah berikut ini : 
+Anda dapat melakukan uji coba dari hasil konfigurasi DNS Anda menggunakan `nslookup` atau `dig`. Misalnya disini saya menggunakan perintah `dig`, Anda dapat mengikuti langkah-langkah berikut ini : 
+
 
 ```
 # whois imonk.my.id | grep Server
@@ -85,7 +88,17 @@ Name Server:NS2.IMONK.MY.ID
 103.41.205.70
 ```
 
-Jika hasil pengetesan konfigurasi DNS server sudah sesuai dengan yang dikonfigurasi sebelumnya, maka akan menampilkan IP Address yang digunakan pada domain tersebut. Dari hasil pengetesan diatas dapat dilihat bahwa domain sudah resolv ke IP Address yang digunakan. Sebagai informasi tambahan apabila Anda melakukan konfigurasi DNS menggunakan VPS maka Anda perlu menunggu waktu propagasi dan waktu propagasi paling lambar 2x24 jam tergantung dari resolver ISP yang Anda gunakan, namun jika Anda menggunakan VM local Anda hanya menunggu beberapa saat domain tersebut akan resolv atau biasanya dapat resolv secara langsung tergantu dari segi konfigurasi resolver juga (resolv.conf). 
+Jika hasil pengetesan konfigurasi DNS server sudah sesuai dengan yang dikonfigurasi sebelumnya, maka akan menampilkan IP Address yang digunakan pada domain tersebut. Dari hasil pengetesan diatas dapat dilihat bahwa domain sudah resolv ke IP Address yang digunakan. Sebagai informasi tambahan apabila Anda melakukan konfigurasi DNS menggunakan VPS maka Anda perlu menunggu waktu propagasi dan waktu propagasi paling lambat 2x24 jam tergantung dari resolver ISP yang Anda gunakan, namun jika Anda menggunakan VM local Anda hanya menunggu beberapa saat domain tersebut akan resolv atau biasanya dapat resolv secara langsung tergantung dari segi konfigurasi resolver juga (resolv.conf). 
+
+Untuk memastikan domain Anda sudah bisa diakses, instal web server (misalnya : apache) pada CentOs 7-server Anda dengan perintah : 
+
+```
+yum install httpd
+```
+
+Coba akses root domain Anda pada web browser, apabila berhasil maka akan tampil seperti pada gambar 3 berikut ini : 
+
+![Screenshot Git-FTP](/assets/images/Hasil-web-server.png)
 
 Demikian informasi yang dapat saya bagikan semoga ilmu dan pengetahun tentang DNS Server ini dapat bermanfaat dan barokah buat kita semua. Aamiin 
 
