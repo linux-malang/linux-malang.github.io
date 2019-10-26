@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Lsyncd Untuk Sinkronisasi File dan Direktori Pada Server CentOS 7"
-date: 2019-10-08 00:00:00
+date: 2019-10-27 00:00:00
 author: Nur Hamim
 categories: blog
 tags: lsyncd rsync linux centos 
@@ -19,7 +19,7 @@ Lsyncd bekerja pada arsitektur Master dan Slave di mana ia memantau direktori pa
 
 Berikut topologi yang akan digunakan pada panduan ini:
 
-![Topologi](/assets/images/topologi-lsyncd.jpg)
+![Topologi](/assets/images/topologi.jpg)
 
 **Kebutuhan:** 
 
@@ -41,13 +41,15 @@ Silakan login pada "srv-prod" dan setup ssh key authentication
 Copy publik key ke server tujuan "srv-backup"
 
 ```
-[root@srv-prod ~]# ssh-keygen -t rsa
+[root@srv-prod ~]# ssh-copy-id root@10.10.1.7
 ```
 Untuk memastikan silakan akses ssh dari "srv-prod" ke "srv-backup" 
 
 ```
 [root@srv-prod ~]# ssh root@10.10.1.7
 ```
+
+Selengkapnya terkait SSH Key Authentication dapat merujuk pada laman [**ini**](https://nurhamim.net/remote-server-menggunakan-ssh-key-di-linux/)
 
 **Langkah 2**
 
@@ -172,7 +174,7 @@ drwxr-xr-x  2 root root  6 Oct 26 16:41 klim-mantap
 
 ![Hasil Perubahan File](/assets/images/srv-backup-set.png)
 
-Selanjtunya melihat log pengiriman atau perubahan yang telah di lakukan di sisi srv-prod sebagai berikut
+Selanjutnya melihat log sinkronisasi atau perubahan yang telah di lakukan di sisi srv-prod sebagai berikut
 
 ```
 [root@srv-prod html]#
